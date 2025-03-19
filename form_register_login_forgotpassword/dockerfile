@@ -1,0 +1,14 @@
+# Usando a imagem oficial do nginx como base
+FROM nginx:alpine
+
+# Define o diretório de trabalho dentro do container
+WORKDIR /usr/share/nginx/html
+
+# Copia os arquivos HTML, CSS e JavaScript para o diretório de trabalho
+COPY . .
+
+# Expõe a porta 80, que é a porta padrão do nginx
+EXPOSE 80
+
+# Comando para iniciar o nginx quando o container for executado
+CMD ["nginx", "-g", "daemon off;"]
