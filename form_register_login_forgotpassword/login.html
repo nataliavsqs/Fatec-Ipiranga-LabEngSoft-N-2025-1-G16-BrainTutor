@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Alterado para português do Brasil -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> <!-- Título traduzido -->
+    <!-- Incluindo Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container principal do formulário -->
+    <div class="form_wrapper">
+        <div class="form_container">
+            <!-- Título do formulário -->
+            <div class="title_container">
+                <h2>Formulário de Login</h2> <!-- Título traduzido -->
+            </div>
+
+            <!-- Linha para organização do layout -->
+            <div class="row clearfix">
+                <div>
+                    <!-- Formulário de login -->
+                    <form>
+                        <!-- Campo de e-mail -->
+                        <div class="input_field">
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="email" name="email" placeholder="E-mail" required> <!-- Placeholder traduzido -->
+                        </div>
+
+                        <!-- Campo de senha -->
+                        <div class="input_field">
+                            <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" name="password" placeholder="Senha" required> <!-- Placeholder traduzido -->
+                        </div>
+
+                        <!-- Campo de "Lembrar de Mim" -->
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" name="rememberMe" id="rememberMe">
+                            <label for="rememberMe">Lembrar de mim</label> <!-- Texto traduzido -->
+                        </div>
+
+                        <!-- Botão de envio -->
+                        <input class="button" type="submit" value="Entrar"> <!-- Texto do botão traduzido -->
+
+                        <!-- Links extras -->
+                        <div class="extraLinks">
+                            <a class="customLink" href="register.html">Criar uma nova conta</a> <!-- Texto traduzido -->
+                            <a class="customLink" href="forgot.html">Esqueci minha senha</a> <!-- Texto traduzido -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Créditos -->
+    <p class="credit">Brain Tutor por <a target="_blank" href="#">Giovana Miyuki & Natália Vasques</a></p> <!-- Texto traduzido -->
+
+    <!-- Incluindo o arquivo JavaScript para manipulação do campo de seleção de país -->
+    <script src="country.js"></script>
+</body>
+</html>
